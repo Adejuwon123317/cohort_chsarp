@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cohort_csharp
 {
-    public class Car : IAutomobile
+    public class Car : Automobile
     {
         public static void Booth()
         {
