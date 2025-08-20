@@ -2,21 +2,56 @@
 using cohort_csharp;
 using System.ComponentModel;
 using System.Net.Security;
+using System.Threading.Channels;
+
+Player result = new Player();
+
+result.Displayinfo();
 
 
-////operators.MyMethod();
-// var value = operators.VatCalculator(1500);
-//Console.WriteLine(value);
+result.Levelup();
+result.Levelup();
+
+
+
+Console.WriteLine("     AFTER LEVELLING UP    ");
+result.Displayinfo();
+
+Console.ReadLine();
 
 
 
 
-Staticprogramcs.Id = 345;
-Staticprogramcs.Method2();
 
-Nonstaticprogram.schoolId = 890;
 
-//class          //object or instace of a class  //constructor
-Nonstaticprogram   word =                     new Nonstaticprogram(); //instantiation
-word.Name = "hello";
-word.Method2();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Staticprogramcs.Id = 345;
+//Staticprogramcs.Method2();
+//Car.ProductName = "Porshe";
+//Car.Tyre();
+//Automobile.ProductName = "Corolla";
+//Console.WriteLine(Car.ProductName);

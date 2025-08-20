@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace cohort_csharp
 {
+    //derived class
     public class Car : Automobile
     {
-        public static void Booth()
-        {
-            Console.WriteLine();
-        }
     }
-
-    public class Bus : Car
+    public class Bus : Automobile
     {
     }
 }
