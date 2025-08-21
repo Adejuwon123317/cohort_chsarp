@@ -6,18 +6,19 @@ using System.Threading.Channels;
 
 Player result = new Player();
 
+Console.WriteLine("     Player info    ");
+result.Userinput();
 result.Displayinfo();
 
-
+Console.WriteLine("      Initiating levelup...    ");
 result.Levelup();
 result.Levelup();
 
 
-
-Console.WriteLine("     AFTER LEVELLING UP    ");
+Console.WriteLine("     After levelling up    ");
 result.Displayinfo();
 
-Console.ReadLine();
+Console.ReadKey();
 
 
 
