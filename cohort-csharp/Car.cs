@@ -7,26 +7,27 @@ using System.Threading.Tasks;
 namespace cohort_csharp
 {
     //derived class
-    public class Car : Bus, IAutomobile, IResult
+    public class Car
     {
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Carid;
+        public string Carname;
+        public string Caryear; //fields
+        public DateTime CarDate;
 
-        public void MyMethod1()
+        //constructor
+        public Car(int id, string name,string year, DateTime date)
         {
-            Console.WriteLine("hello world");
-        }
+            Carid = id;
+            Carname = name;
+            Caryear = year;
+            CarDate = date;
 
-        public void MyMethod2()
-        {
-           
         }
-
-        public void MyMethod3()
+        public static void MyMethod()
         {
-           
+            Console.WriteLine("My name");
         }
+  
     }
-    public class Bus : Automobile
-    {
-    }
+        
 }

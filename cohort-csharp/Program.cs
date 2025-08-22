@@ -4,16 +4,27 @@ using System.ComponentModel;
 using System.Net.Security;
 using System.Threading.Channels;
 
-Car car = new Car();
-car.MyMethod1();
+//Console.WriteLine("Hi what is your name");
+//var result = Console.ReadLine();
 
+//Car car = new Car(201, result, "2008", DateTime.UtcNow);
+//Car.MyMethod();
 
+Books book1;
 
+book1.title = "God is love";
+book1.author = "His disciples";
+book1.subject = "Do we love God";
+book1.id = 201;
 
+Books book2;
 
+book2.title = "c# solution";
+book2.author = "venkat";
+book2.subject = "Thread";
+book2.id = 202;
 
-
-
+Console.WriteLine("book title : {0}", book1.title);
 
 
 
@@ -73,6 +84,9 @@ car.MyMethod1();
 
 
 
+
+//Car car = new Car();
+//car.MyMethod1();
 
 
 
