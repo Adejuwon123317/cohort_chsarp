@@ -1,33 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using cohort_csharp;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Net.Security;
 using System.Threading.Channels;
 
-//Console.WriteLine("Hi what is your name");
-//var result = Console.ReadLine();
+List<Employee> employees = new List<Employee>();
+employees.Add(new Employee() { Id = 101, Name = "Ben", Experience = 4, Salary = 300000 });
+employees.Add(new Employee() { Id = 102, Name = "Grace", Experience = 5, Salary = 900000 });
+employees.Add(new Employee() { Id = 103, Name = "Juwon", Experience = 8, Salary = 240000 });
+employees.Add(new Employee() { Id = 104, Name = "Azoka", Experience = 6, Salary = 10000000 });
+employees.Add(new Employee() { Id = 105, Name = "Ire", Experience = 6, Salary = 850000 });
+employees.Add(new Employee() { Id = 106, Name = "Precious", Experience = 7, Salary = 15000000 });
+ispromotable promo = new ispromotable(promote);
 
-//Car car = new Car(201, result, "2008", DateTime.UtcNow);
-//Car.MyMethod();
+Employee.PromoteEmployee(employees,promo);
 
-Books book1;
-
-book1.title = "God is love";
-book1.author = "His disciples";
-book1.subject = "Do we love God";
-book1.id = 201;
-
-Books book2;
-
-book2.title = "c# solution";
-book2.author = "venkat";
-book2.subject = "Thread";
-book2.id = 202;
-
-Console.WriteLine("book title : {0}", book1.title);
-
-
-
+static bool promote(Employee employee)
+{
+    if (employee.Salary <= 300000)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 
 
@@ -35,28 +34,8 @@ Console.WriteLine("book title : {0}", book1.title);
 
 
 
-
-
-
-
-
-
-
-//Player result = new Player();
-
-//Console.WriteLine("     Player info    ");
-//result.Userinput();
-//result.Displayinfo();
-
-//Console.WriteLine("      Initiating levelup...    ");
-//result.Levelup();
-//result.Levelup();
-
-
-//Console.WriteLine("     After levelling up    ");
-//result.Displayinfo();
-
-//Console.ReadKey();
+//HelloFunction del = new HelloFunction(Calculator2.Hello);
+//del("what a delegate world");
 
 
 
@@ -73,27 +52,16 @@ Console.WriteLine("book title : {0}", book1.title);
 
 
 
+//Console.WriteLine("Hello world");
 
+//var equal = Calculator.AreEqual<string>("67", "89");
+//var result = Calculator.AreEqual<int>(54, 78);
+//if (equal)
+//{
+//    Console.WriteLine("the values are equal");
+//}
+//else
+//{
+//    Console.WriteLine("the values are not");
+//}
 
-
-
-
-
-
-
-
-
-
-
-//Car car = new Car();
-//car.MyMethod1();
-
-
-
-
-//Staticprogramcs.Id = 345;
-//Staticprogramcs.Method2();
-//Car.ProductName = "Porshe";
-//Car.Tyre();
-//Automobile.ProductName = "Corolla";
-//Console.WriteLine(Car.ProductName);
