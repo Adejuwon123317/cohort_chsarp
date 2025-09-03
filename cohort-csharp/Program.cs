@@ -4,21 +4,25 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Net.Security;
 using System.Threading.Channels;
+List<Student> students = new List<Student>();
+students.Add(new Student() { Id = 01, Name = "Juwon", Grade = 90, Age = 21, Class = "400level" });
+students.Add(new Student() { Id = 02, Name = "Nathaniel", Grade = 65, Age = 19, Class = "200level" });
+students.Add(new Student() { Id = 03, Name = "Gabriel", Grade = 70, Age = 20, Class = "300level" });
+students.Add(new Student() { Id = 04, Name = "Isreal", Grade = 78, Age = 15, Class = "300level" });
+students.Add(new Student() { Id = 05, Name = "Joseph", Grade = 74, Age = 17, Class = "100level" });
+students.Add(new Student() { Id = 06, Name = "Tomiwa", Grade = 80, Age = 22, Class = "400level" });
+students.Add(new Student() { Id = 07, Name = "Enoch", Grade = 75, Age = 21, Class = "400level" });
+students.Add(new Student() { Id = 08, Name = "David", Grade = 65, Age = 21, Class = "300level" });
+students.Add(new Student() { Id = 09, Name = "Praise", Grade = 55, Age = 13, Class = "100level" });
+students.Add(new Student() { Id = 10, Name = "Peter", Grade = 77, Age = 18, Class = "400level" });
 
-List<Employee> employees = new List<Employee>();
-employees.Add(new Employee() { Id = 101, Name = "Ben", Experience = 4, Salary = 300000 });
-employees.Add(new Employee() { Id = 102, Name = "Grace", Experience = 5, Salary = 900000 });
-employees.Add(new Employee() { Id = 103, Name = "Juwon", Experience = 8, Salary = 240000 });
-employees.Add(new Employee() { Id = 104, Name = "Azoka", Experience = 6, Salary = 10000000 });
-employees.Add(new Employee() { Id = 105, Name = "Ire", Experience = 6, Salary = 850000 });
-employees.Add(new Employee() { Id = 106, Name = "Precious", Experience = 7, Salary = 15000000 });
-ispromotable promo = new ispromotable(promote);
+ispromoted word = new ispromoted(qualify);
 
-Employee.PromoteEmployee(employees,promo);
+Student.PromoteStudent(students, word);
 
-static bool promote(Employee employee)
+static bool qualify(Student students)
 {
-    if (employee.Salary <= 300000)
+    if (students.Grade >= 75)
     {
         return true;
     }
@@ -28,40 +32,9 @@ static bool promote(Employee employee)
     }
 }
 
+//Console.WriteLine("Write a greeting message to send to your friend in uppercase");
+//string word = Console.ReadLine();
+//var result = word.ToLower();
+//Console.WriteLine(result);
 
-
-
-
-
-
-//HelloFunction del = new HelloFunction(Calculator2.Hello);
-//del("what a delegate world");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Console.WriteLine("Hello world");
-
-//var equal = Calculator.AreEqual<string>("67", "89");
-//var result = Calculator.AreEqual<int>(54, 78);
-//if (equal)
-//{
-//    Console.WriteLine("the values are equal");
-//}
-//else
-//{
-//    Console.WriteLine("the values are not");
-//}
-
+//Console.ReadKey();

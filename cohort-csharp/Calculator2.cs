@@ -12,9 +12,11 @@ namespace cohort_csharp
     //it is a function type pointer
     public class Calculator2
     {
-        public static void Hello (string message)
-         {
-            Console.WriteLine (message);
-         }
+        public static void Hello(string message)
+        {
+            Console.WriteLine(message);
+        }
+       
+     
     }
 }

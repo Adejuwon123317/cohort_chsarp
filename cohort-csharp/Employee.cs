@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cohort_csharp
 {
-    public delegate bool ispromotable(Employee empl);
+    public delegate bool ispromotable(Employee emp);
     public class Employee
     {
         public int Id { get; set; }
@@ -18,9 +18,9 @@ namespace cohort_csharp
         {
             foreach (var emp in Emplist)
             {
-                if (iseligible(emp))
+                if(iseligible(emp))
                 {
-                    Console.WriteLine(emp.Name + " is promoted");
+                    Console.WriteLine(emp.Name + " " + "is promoted");
                 }
             }
         }
