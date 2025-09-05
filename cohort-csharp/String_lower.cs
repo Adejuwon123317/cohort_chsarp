@@ -15,6 +15,6 @@ namespace cohort_csharp
             return value.ToLower();
 
         }
-
+        
     }
 }
