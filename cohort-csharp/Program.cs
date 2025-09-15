@@ -35,6 +35,9 @@ using System.Threading.Channels;
 
 //Console.WriteLine("Total Data :{0}", DataId.Count());
 
+
+//Stack
+//LIFO Last in first out
 //Stack<string> values = new Stack<string>();
 //values.Push("Corolla");
 //values.Push("Mercedes");
