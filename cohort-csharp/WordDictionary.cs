@@ -28,6 +28,7 @@ namespace cohort_csharp
             dict.Add("Idle:", "\tNot Active Or Doing Nothing\n");
             dict.Add("Jovial:", "\tCheerful And Full Of Good Humor\n");
             dict.Add("Keen:", "\tVery Intrested Eager Or Sharp\n");
+            //njhcijobndjk
 
             foreach(var item in dict)
             {
